@@ -1,0 +1,24 @@
+<!-- <div *ngIf="userData"> -->
+    <div class="container">
+        <div *ngIf="!show" class="d-flex flex-column justify-content-center align-items-center pt-5">
+            <div>If you want to see the details of users which is registered then please click the button!</div>
+            <button class="btn btn-primary" (click)="loadData()">User Details</button>
+
+        </div>
+        <table class="table table-sm" *ngIf="show">
+            <thead>
+              <tr class="bg-dark text-white">
+                <th>User Name</th>
+                <th>Password</th>
+              </tr>
+            </thead>
+              <tbody *ngIf="show">
+                <tr class="table-Info"  *ngFor = "let data of parseData">
+                    <td>{{data.username}}</td>
+                    <td>{{data.password}}</td>
+                  </tr>
+            </tbody>
+          </table>
+    </div>
+  
+<!-- </div> -->

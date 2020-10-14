@@ -1,0 +1,13 @@
+.imgstyle{
+    /* background-image: "./../../assets/images/page-not-found.png"; */
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    height: 30%;
+}
+.imgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+}
